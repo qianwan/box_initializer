@@ -12,6 +12,7 @@ tar xf emacs-24.5.tar.gz
 sudo yum install ncurses-devel -y
 cd $root/emacs-24.5/
 ./configure --prefix=/usr/local --without-x
+make
 sudo make install
 rm -rf ${HOME}/.emacs*
 cd ${HOME}
