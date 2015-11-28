@@ -11,10 +11,10 @@ wget 'http://ftp.twaren.net/Unix/GNU/gnu/emacs/emacs-24.5.tar.gz'
 tar xf emacs-24.5.tar.gz
 sudo yum install ncurses-devel -y
 cd $root/emacs-24.5/
-./configure
+./configure --prefix=/usr/local --without-x
 sudo make install
 rm -rf ${HOME}/.emacs*
 cd ${HOME}
-git clone https://github.com/qianwan/emacs.d.git
+git clone https://github.com/qianwan/emacs.d.git .emacs
 
 cd $root
