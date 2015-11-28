@@ -16,6 +16,6 @@ make
 sudo make install
 rm -rf ${HOME}/.emacs*
 cd ${HOME}
-git clone https://github.com/qianwan/emacs.d.git .emacs
+git clone https://github.com/qianwan/emacs.d.git .emacs.d
 
 cd $root
