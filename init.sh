@@ -17,5 +17,5 @@ sudo make install
 rm -rf ${HOME}/.emacs*
 cd ${HOME}
 git clone https://github.com/qianwan/emacs.d.git .emacs.d
-
-cd $root
+cd ${HOME}
+emacs --script .emacs.d/init.el
